@@ -1,0 +1,14 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 47vw;
+    height: 85vh;
+    transition: .8s;
+}
+

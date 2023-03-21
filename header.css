@@ -1,0 +1,88 @@
+:root 
+{
+--black:black;
+--color:rgb(197, 77, 77);
+--test:rgb(255, 255, 0);
+--color2:rgb(158, 158, 158);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 96%;
+    padding: 2vw;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+    background: rgb(0,0,0);
+background: linear-gradient(24deg, rgba(0,0,0,1) 0%, rgba(81,81,81,1) 69%, rgba(115,115,115,1) 100%);
+    position: relative;
+    box-shadow: 0 0 5px var(--color2),
+    0 0 100px var(--color2);
+}
+header .navBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 86%;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60%;
+}
+h1,li{
+    font-size: 1.4em;
+    transition: 0.8s;
+}
+h1:hover{
+    text-shadow: 0 0 5px var(--color2),
+    0 0 25px var(--color2),
+    0 0 50px var(--color2),
+    0 0 100px var(--color2);
+}
+.navBox li{
+    display: flex;
+    flex-direction: column;
+}
+.navBox li:hover{
+    text-shadow: 0 0 5px var(--color2),
+    0 0 25px var(--color2),
+    0 0 50px var(--color2),
+    0 0 100px var(--color2);
+}
+nav li span{
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    left: 0%;
+    color: antiquewhite;
+    background-color: var(--color);
+    transition: .5s;
+}
+nav li:hover span{
+    left: 100%;
+    width: 100%;
+}
+h1{
+    display: flex;
+    flex-direction: column;
+}
+h1 span{
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    left: 0%;
+    color: antiquewhite;
+    /* background-color: #b5a642; */
+    background-color:var(--color);
+    transition: .8s;
+}
+h1:hover span{
+    left: 100%;
+    width: 100%;
+}

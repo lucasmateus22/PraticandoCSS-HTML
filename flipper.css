@@ -1,0 +1,104 @@
+:root 
+{
+--black:black;
+--color:rgb(197, 77, 77);
+--test:rgb(255, 255, 0);
+--color2:rgb(158, 158, 158);
+}
+h3{
+    font-size: 3em;
+    color: #fff;
+}
+.flip-container {
+    width: 90%;
+    height: 70%;
+    perspective: 10000px;
+  }
+.flipper{
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
+}
+.flipper{
+    position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+    border-radius: 20px;
+}
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px var(--color2);
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(79,79,79,1) 100%);
+}
+.back{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+	transform: rotateY(180deg);
+}
+.back input{
+    width: 80%;
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding-left: 5%;
+}
+#switch:checked ~ .flip-container .flipper {
+    transform: rotateY(180deg);
+}
+.boxCadastroButt button{
+    padding: 20%;
+    background-color: var(--color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--color2),
+                0 0 25px var(--color2);
+                transition: .5s;
+}
+.boxCadastroButt button:hover{
+    background-color: #363636;
+    box-shadow: 0 0 5px var(--color2),
+                0 0 25px var(--color2),
+                0 0 50px var(--color2);
+}
+.signINBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 80%;
+    width: 80%;
+}
+.boxAPI{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(216, 216, 216);
+    width: 45%;
+    height: 60%;
+    margin-right: 10%;
+}
+h5{
+    color: black;
+}
+.API-signin{
+    height: 16%;
+    width: 70%;
+    background-color: #363636;
+    border: 1px solid rgb(163, 163, 163);
+}
